@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static tailwind_tags %}
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  {% tailwind_css %}
+  <title>
+    {% block title %}
+
+    {% endblock title %}
+  </title>
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <header class="site-header fixed top-0 left-0 w-full z-50 bg-white shadow-md" id="navbar">
+      <nav class=" container flex justify-between items-center py-5  ">
+        <div
+          class="[&_a]:text-2xl sm:[&_a]:text-3xl md:[&_a]:4xl [&_a]:font-bold [&_a]:bg-gradient-to-r [&_a]:from-primary [&_a]:to-primary-200 [&_a]:bg-clip-text [&_a]:text-transparent py-4">
+          <a href="/"> Tech Design Nepal International</a>
+        </div>
+
+        <div class="toggle">
+          <button id="menu-btn" class="relative w-10 h-10 flex items-center justify-center group">
+            <span class="absolute h-1 w-8 bg-black transform transition duration-300 ease-in-out
+           -translate-y-2 group-[.active]:translate-y-0 group-[.active]:rotate-45 rounded-md"></span>
+
+            <span class="absolute h-1 w-8 bg-black transition duration-300 ease-in-out
+           group-[.active]:opacity-0 rounded-md"></span>
+
+            <span class="absolute h-1 w-8 bg-black transform transition duration-300 ease-in-out
+           translate-y-2 group-[.active]:translate-y-0 group-[.active]:-rotate-45 rounded-md"></span>
+          </button>
+        </div>
+      </nav>
+
+    </header>
+    <main class="site-main">
+      {% block content %}
+
+      {% endblock content %}
+    </main>
+    <footer class="site-footer bg-primary-400">
+      <div class="container pt-6 flex flex-wrap justify-between gap-y-5 py-20 text-light-grayish-blue-200">
+        <div
+          class="[&_h2]:bg-gradient-to-r [&_h2]:from-primary [&_h2]:to-primary-200 [&_h2]:bg-clip-text [&_h2]:text-transparent [&_p]:text-light-grayish-blue-200 ">
+          <h2>Tech Design Nepal International</h2>
+          <p>Creating exceptional digital experiences for businesses worldwide.</p>
+        </div>
+        <div class="[&_h3]:text-white [&_h3]:mb-4 ">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Process</a></li>
+            <li><a href="">Get Started</a></li>
+            <li><a href="">Carrers</a></li>
+          </ul>
+        </div>
+        <div class="[&_h3]:text-white [&_h3]:mb-4">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href=""><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
+            <li><a href=""><i class="fa-brands fa-square-facebook"></i> Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="container text-light-grayish-blue-200 py-6 text-center">
+        <p>© 2025 <a href="/">Tech Design Nepal International</a>. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{% static 'js/swiper.js' %}" ></script>
+
+  <script src="{% static 'js/nav-toggle.js' %}"></script>
+  <script src="{% static 'js/menu-stiky.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,571 @@
+{% extends 'partial/base.html' %} {% load static %} {% block content %}
+<section
+  id="hero"
+  class="pt-20 bg-gradient-to-br from-primary-100/40 to-light-grayish-blue-50"
+>
+  <div class="container py-20">
+    <div class="flex flex-wrap gap-6">
+      <div class="max-lg:w-full lg:w-[calc(50%-12px)]">
+        <div
+          class="[&_small]:py-2 [&_small]:px-4 text-center sm:text-center md:text-start [&_p]:text-light-grayish-blue-300 [&_small]:bg-light-grayish-blue [&_small]:text-sm [&_small]:inline-block [&_small]:text-center [&_small]:text-primary-300 [&_small]:rounded-full [&_h1]:mt-4 [&_span]:text-primary [&_small]:capitalize [&_h1]:capitalize mb-4 sm:mb-5 md:mb-7 sm:flex sm:justify-center sm:items-start sm:flex-col w-ful sm:w-full md:w-auto"
+        >
+          <small>✨Transforming Ideas into Digital Experiences</small>
+          <h1>We Design Websites That <span>Drive Results</span></h1>
+          <p>
+            From stunning landing pages to complex web applications, we craft
+            digital experiences that captivate your audience and grow your
+            business.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-5 w-full mb-4 items-center">
+          <a href="" class="btn btn-primary"
+            >Start Your Project <i class="fa-solid fa-arrow-right"></i
+          ></a>
+          <a href="" class="btn btn-secondary">View Our Work</a>
+        </div>
+        <div
+          class="py-3 flex flex-wrap gap-x-3 items-center [&_p]:text-light-grayish-blue-300"
+        >
+          <div class="max-sm:mb-3">
+            <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+            <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          </div>
+          <p>Rated 5/5 by 100+ clients</p>
+        </div>
+      </div>
+      <!-- Hero Images -->
+      <div
+        class="max-lg:hidden lg:w-[calc(50%-12px)] [&_img]:w-full [&_img]:h-full [&_img]:bg-center [&_img]:bg-cover object-cover"
+      >
+        <img
+          src="{% static 'images/hero-img.png' %}"
+          alt="Hero Images"
+          width="500"
+          height="400"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container py-20">
+    <div class="text-center [&_p]:text-light-grayish-blue-300 mb-6">
+      <h2>Our Services</h2>
+      <p>Comprehensive web design solutions tailored to your business needs</p>
+    </div>
+
+    <div class="container">
+      <div class="swiper serviceSwiper">
+        <div class="swiper-wrapper py-5">
+          <!-- Card -->
+          <div class="swiper-slide">
+            <div
+              class="bg-white border border-gray-200 rounded-3xl p-8 h-full hover:shadow-lg transition-all duration-300 cursor-pointer"
+            >
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-blue-100 rounded-xl mb-6"
+              >
+                <i class="fa-solid fa-laptop text-3xl text-primary"></i>
+              </div>
+
+              <h3 class="text-xl font-semibold mb-3">Website Design</h3>
+
+              <p class="text-gray-600 leading-relaxed">
+                Beautiful, modern websites that capture your brand essence and
+                engage visitors from the first click.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white border border-gray-200 rounded-3xl p-8 h-full hover:shadow-lg transition-all duration-300 cursor-pointer"
+            >
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-blue-100 rounded-xl mb-6"
+              >
+                <i class="fa-solid fa-bezier-curve text-3xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">UI / UX Design</h3>
+              <p class="text-gray-600">
+                Intuitive user experiences designed for clarity and conversions.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white border border-gray-200 rounded-3xl p-8 h-full hover:shadow-lg transition-all duration-300 cursor-pointer"
+            >
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-blue-100 rounded-xl mb-6"
+              >
+                <i
+                  class="fa-regular fa-pen-to-square text-3xl text-primary"
+                ></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">Content Writing</h3>
+              <p class="text-gray-600">
+                We offer SEO-optimized content writing services to boost
+                visibility and attract the right audience.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div
+              class="bg-white border border-gray-200 rounded-3xl p-8 h-full hover:shadow-lg transition-all duration-300 cursor-pointer"
+            >
+              <div
+                class="w-14 h-14 flex items-center justify-center bg-blue-100 rounded-xl mb-6"
+              >
+                <i class="fa-solid fa-bug-slash text-3xl text-primary"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3">
+                Technical Support & Maintenance
+              </h3>
+              <p class="text-gray-600">
+                Proactive technical support, bug fixes, and regular maintenance
+                to keep your system fast, secure, and up to date.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-8 !bottom-0"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light-grayish-blue-100 mb-20">
+  <div class="container py-10">
+    <div class="text-center mb-5 [&_p]:text-light-grayish-blue-300">
+      <h2>Our Work</h2>
+      <p>
+        Explore our recent projects and see how we’ve helped business succeed
+        online.
+      </p>
+    </div>
+    <div class="flex flex-wrap gap-6 py-5 justify-center items-center">
+      <div
+        class="group w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] rounded-3xl shadow-black/25 shadow-md overflow-hidden cursor-pointer"
+      >
+        <figure
+          class="[&_img]:w-full [&_img]:h-[192px] overflow-hidden h-[192px] group-hover:[&_img]:scale-110 [&_img]:transition-all [&_img]:duration-300"
+        >
+          <img
+            src="{% static 'images/e-comerce-img.png' %}"
+            alt=""
+            width="346"
+            height="192"
+          />
+        </figure>
+        <div
+          class="p-5 [&_p]:text-light-grayish-blue-300 [&_p]:text-base [&_small]:bg-light-grayish-blue [&_small]:px-4 [&_small]:py-2 [&_small]:inline-block [&_small]:rounded-full [&_h4]:mt-3 [&_small]:text-primary [&_small]:capitalize"
+        >
+          <small>E-Commerse</small>
+          <h4>E-commerce Platform</h4>
+          <p>Modern online store with seamless checkout experience.</p>
+        </div>
+      </div>
+
+      <div
+        class="group w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] rounded-3xl shadow-black/25 shadow-md overflow-hidden cursor-pointer"
+      >
+        <figure
+          class="[&_img]:w-full [&_img]:h-[192px] overflow-hidden h-[192px] group-hover:[&_img]:scale-110 [&_img]:transition-all [&_img]:duration-300"
+        >
+          <img
+            src="{% static 'images/e-comerce-img.png' %}"
+            alt=""
+            width="346"
+            height="192"
+          />
+        </figure>
+        <div
+          class="p-5 [&_p]:text-light-grayish-blue-300 [&_p]:text-base [&_small]:bg-light-grayish-blue [&_small]:px-4 [&_small]:py-2 [&_small]:inline-block [&_small]:rounded-full [&_h4]:mt-3 [&_small]:text-primary [&_small]:capitalize"
+        >
+          <small>E-Commerse</small>
+          <h4>E-commerce Platform</h4>
+          <p>Modern online store with seamless checkout experience.</p>
+        </div>
+      </div>
+
+      <div
+        class="group w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] rounded-3xl shadow-black/25 shadow-md overflow-hidden cursor-pointer"
+      >
+        <figure
+          class="[&_img]:w-full [&_img]:h-[192px] overflow-hidden h-[192px] group-hover:[&_img]:scale-110 [&_img]:transition-all [&_img]:duration-300"
+        >
+          <img
+            src="{% static 'images/e-comerce-img.png' %}"
+            alt=""
+            width="346"
+            height="192"
+          />
+        </figure>
+        <div
+          class="p-5 [&_p]:text-light-grayish-blue-300 [&_p]:text-base [&_small]:bg-light-grayish-blue [&_small]:px-4 [&_small]:py-2 [&_small]:inline-block [&_small]:rounded-full [&_h4]:mt-3 [&_small]:text-primary [&_small]:capitalize"
+        >
+          <small>E-Commerse</small>
+          <h4>E-commerce Platform</h4>
+          <p>Modern online store with seamless checkout experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container mb-30">
+    <div class="[&_p]:text-light-grayish-blue-300 text-center">
+      <h2>Why Choose TDNI</h2>
+      <p>What makes us different from the rest</p>
+    </div>
+
+    <div class="flex flex-wrap py-10 gap-6 items-center justify-center">
+      <div
+        class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] border-2 rounded-2xl p-7 border-light-grayish-blue-100 text-center flex flex-col items-center"
+      >
+        <div
+          class="w-14 h-14 bg-light-grayish-blue flex justify-center items-center rounded-full mb-4 [&_i]:text-primary [&_i]:text-2xl"
+        >
+          <i class="fa-solid fa-award"></i>
+        </div>
+        <div class="[&_p]:text-light-grayish-blue-300">
+          <h4>Excellence</h4>
+          <p>
+            We deliver premium quality designs that exceed expectations and set
+            industry standards.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] border-2 rounded-2xl p-7 border-light-grayish-blue-100 text-center flex flex-col items-center"
+      >
+        <div
+          class="w-14 h-14 bg-light-grayish-blue flex justify-center items-center rounded-full mb-4 [&_i]:text-primary [&_i]:text-2xl"
+        >
+          <i class="fa-solid fa-dollar-sign"></i>
+        </div>
+        <div class="[&_p]:text-light-grayish-blue-300">
+          <h4>Affordable</h4>
+          <p>
+            Professional web solutions at competitive prices that fit your
+            budget without compromising quality.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] border-2 rounded-2xl p-7 border-light-grayish-blue-100 text-center flex flex-col items-center"
+      >
+        <div
+          class="w-14 h-14 bg-light-grayish-blue flex justify-center items-center rounded-full mb-4 [&_i]:text-primary [&_i]:text-2xl"
+        >
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="[&_p]:text-light-grayish-blue-300">
+          <h4>Customer Obsessed</h4>
+          <p>
+            Your success is our priority. We go above and beyond to ensure
+            complete satisfaction.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-gradient-to-b from-primary to-primary-200">
+  <div class="container py-10">
+    <div class="text-white [&_h2]:text-white mb-5 text-center">
+      <h2>What Our Clients Say</h2>
+      <p>
+        Don't just take our word for it - hear from businesses we've helped
+        succeed
+      </p>
+    </div>
+
+    <div class="flex flex-wrap gap-6">
+      <div
+        class="p-6 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] shadow-black/25 shadow-md bg-white rounded-3xl"
+      >
+        <div class="mb-3">
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+        </div>
+
+        <div
+          class="[&_p]:text-light-grayish-blue-300 [&_p]:mb-5 [&_h5]:-mb-1 [&_small]:text-light-grayish-blue-300"
+        >
+          <p>
+            "Professional, creative, and responsive. They understood our vision
+            perfectly and delivered beyond our expectations."
+          </p>
+          <h5>Michael Chen</h5>
+          <small>Bloom Botanicals</small>
+        </div>
+      </div>
+      <div
+        class="p-6 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] shadow-black/25 shadow-md bg-white rounded-3xl"
+      >
+        <div class="mb-3">
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+        </div>
+
+        <div
+          class="[&_p]:text-light-grayish-blue-300 [&_p]:mb-5 [&_h5]:-mb-1 [&_small]:text-light-grayish-blue-300"
+        >
+          <p>
+            "Professional, creative, and responsive. They understood our vision
+            perfectly and delivered beyond our expectations."
+          </p>
+          <h5>Michael Chen</h5>
+          <small>Bloom Botanicals</small>
+        </div>
+      </div>
+      <div
+        class="p-6 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] shadow-black/25 shadow-md bg-white rounded-3xl"
+      >
+        <div class="mb-3">
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+        </div>
+
+        <div
+          class="[&_p]:text-light-grayish-blue-300 [&_p]:mb-5 [&_h5]:-mb-1 [&_small]:text-light-grayish-blue-300"
+        >
+          <p>
+            "Professional, creative, and responsive. They understood our vision
+            perfectly and delivered beyond our expectations."
+          </p>
+          <h5>Michael Chen</h5>
+          <small>Bloom Botanicals</small>
+        </div>
+      </div>
+      <div
+        class="p-6 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] shadow-black/25 shadow-md bg-white rounded-3xl"
+      >
+        <div class="mb-3">
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+        </div>
+
+        <div
+          class="[&_p]:text-light-grayish-blue-300 [&_p]:mb-5 [&_h5]:-mb-1 [&_small]:text-light-grayish-blue-300"
+        >
+          <p>
+            "Professional, creative, and responsive. They understood our vision
+            perfectly and delivered beyond our expectations."
+          </p>
+          <h5>Michael Chen</h5>
+          <small>Bloom Botanicals</small>
+        </div>
+      </div>
+      <div
+        class="p-6 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] shadow-black/25 shadow-md bg-white rounded-3xl"
+      >
+        <div class="mb-3">
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+        </div>
+
+        <div
+          class="[&_p]:text-light-grayish-blue-300 [&_p]:mb-5 [&_h5]:-mb-1 [&_small]:text-light-grayish-blue-300"
+        >
+          <p>
+            "Professional, creative, and responsive. They understood our vision
+            perfectly and delivered beyond our expectations."
+          </p>
+          <h5>Michael Chen</h5>
+          <small>Bloom Botanicals</small>
+        </div>
+      </div>
+      <div
+        class="p-6 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.33%-16px)] shadow-black/25 shadow-md bg-white rounded-3xl"
+      >
+        <div class="mb-3">
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+          <i class="fa-solid fa-star fa-sm" style="color: #fdc700"></i>
+        </div>
+
+        <div
+          class="[&_p]:text-light-grayish-blue-300 [&_p]:mb-5 [&_h5]:-mb-1 [&_small]:text-light-grayish-blue-300"
+        >
+          <p>
+            "Professional, creative, and responsive. They understood our vision
+            perfectly and delivered beyond our expectations."
+          </p>
+          <h5>Michael Chen</h5>
+          <small>Bloom Botanicals</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container my-20 text-light-grayish-blue-300">
+    <div class="">
+      <div class="text-center mb-8">
+        <h2>Let's Build Something Amazing Together</h2>
+        <p>
+          Ready to transform your online presence? Get in touch with us today
+          for a free consultation.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap -mx-3 gap-y-6 justify-center items-center">
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3">
+          <div
+            class="[&_h3]:text-2xl bg-gray-300 p-5 rounded-2xl text-center hover:shadow-lg transition-all duration-300 cursor-pointer lg:translate-y-4 lg:hover:-translate-y-4 flex flex-col items-center"
+          >
+            <div
+              class="flex justify-center p-6 w-14 h-14 items-center rounded-md bg-light-grayish-blue mb-2"
+            >
+              <i class="fa-regular fa-envelope text-primary text-3xl"></i>
+            </div>
+            <h3>E mail</h3>
+            <p>contact@tdni.com</p>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3">
+          <div
+            class="[&_h3]:text-2xl bg-gray-300 p-5 rounded-2xl text-center hover:shadow-lg transition-all duration-300 cursor-pointer lg:translate-y-4 lg:hover:-translate-y-4 flex flex-col items-center"
+          >
+            <div
+              class="flex justify-center p-6 w-14 h-14 items-center rounded-md bg-light-grayish-blue mb-2"
+            >
+              <i class="fa-regular fa-envelope text-primary text-3xl"></i>
+            </div>
+            <h3>E mail</h3>
+            <p>contact@tdni.com</p>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3">
+          <div
+            class="[&_h3]:text-2xl bg-gray-300 p-5 rounded-2xl text-center hover:shadow-lg transition-all duration-300 cursor-pointer lg:translate-y-4 lg:hover:-translate-y-4 flex flex-col items-center"
+          >
+            <div
+              class="flex justify-center p-6 w-14 h-14 items-center rounded-md bg-light-grayish-blue mb-2"
+            >
+              <i class="fa-regular fa-envelope text-primary text-3xl"></i>
+            </div>
+            <h3>E mail</h3>
+            <p>contact@tdni.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-center flex items-center justify-center mb-10 ">
+  <div class="container">
+    <input type="checkbox" id="modal-toggle" class="peer hidden" />
+
+    <label
+      for="modal-toggle"
+      class="cursor-pointer px-10 py-5 bg-primary-400 text-white mb-5 rounded-lg hover:transition-all hover:duration-100 outline-none hover:border-2 hover:border-blue-700"
+    >
+      <i class="fa-solid fa-id-badge text-white text-2xl fa-bounce"></i> Contact Us
+    </label> 
+
+    <!-- Modal Overlay -->
+    <div
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto transition"
+    >
+      <!-- Modal Box -->
+      <div
+        class="bg-white rounded-lg shadow-lg w-full max-w-md p-6 relative scale-95 peer-checked:scale-100 transition"
+      >
+        <!-- Close Button -->
+        <label
+          for="modal-toggle"
+          class="absolute top-3 right-3 cursor-pointer text-gray-400 hover:text-gray-600 text-xl"
+        >
+          &times;
+        </label>
+
+        <!-- Title -->
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Contact Us</h2>
+
+        <!-- Form -->
+        <form class="space-y-4 text-start" action="" method="POST">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Name</label>
+            <input
+              type="text"
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="Your Name"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Email</label>
+            <input
+              type="email"
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="you@email.com"
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700" >Service Interested In</label>
+            <input
+              type="text"
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="What is your best services"
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              rows="4"
+              class="mt-1 w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              placeholder="Tell us about your Project..."
+            ></textarea>
+          </div>
+
+          <!-- Submit closes modal -->
+          <label
+            for="modal-toggle"
+            class="block text-center cursor-pointer bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Submit
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
